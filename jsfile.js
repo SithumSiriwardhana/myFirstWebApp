@@ -1,5 +1,5 @@
 //Function to check if the bidding amount is greater than the current price
-function CheckIfBidAmountSamllerThanCurrent() {
+function checkIfBidAmountSamllerThanCurrent() {
 
   //variables for warning messages
   let successfulMsgCont = document.getElementById('successfulMsgCont')
