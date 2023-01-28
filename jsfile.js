@@ -48,14 +48,14 @@ var images = ["46068568_572787116385_0.58071200-1603169459.jpg",
 var index = 0;
 
 //Function to show the first image when loading the page
-function MakeImage() {
+function makeImage() {
   var img = document.createElement('img')
   img.src = images[index];
   document.getElementById('CakeImage').appendChild(img);
 }
 
 //Function to go to next image when button is clicked
-function NextImage() {
+function nextImage() {
   var img = document.getElementById('CakeImage').getElementsByTagName('img')[0];
   index++;
   index = index % images.length;
@@ -63,7 +63,7 @@ function NextImage() {
 }
 
 //Function to go to previous image when button is clicked
-function PreviousImage() {
+function previousImage() {
   var img = document.getElementById("CakeImage").getElementsByTagName('img')[0];
   index--;
   if (index < 0) {
