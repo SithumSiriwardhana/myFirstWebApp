@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>SDS CAKE SHOP</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="jsfile.js"></script>
+</head>
+
+<body onload="MakeImage()">
+
+  <div>
+    <div>
+      <h1>CAKE SHOP</h1>
+    </div>
+
+    <div class="tagline">
+      <h4>Buy best cake for your every occation.</h4>
+    </div>
+
+    <div id="controls">
+      <button id="PreviousBtn" onclick="PreviousImage()">Previous Cake</button>
+      <button id="NextBtn" onclick="NextImage()"> Next Cake</button>
+    </div>
+
+    <div id="CakeImage"></div>
+
+    <div>
+      <table>
+        <tr>
+          <th>Started Price</th>
+          <th>Current Price</th>
+          <th>Bid Amount</th>
+          <th>Remaining Time</th>
+        </tr>
+        <tr>
+          <td>
+            <p id="start_price">Rs. 3500</p>
+          </td>
+          <td>
+            <div class="container1">
+              <p>Rs. </p>
+              <p id="current_price">0</p>
+            </div>
+          </td>
+          <td>
+            <div class="container2">
+              <input type="text" id="bid_amount" name="bid_amount" placeholder="Enter a Bid">
+              <button id="click_to_bid" onclick="CheckIfBidAmountSamllerThanCurrent()">CLICK TO BID</button>
+            </div>
+          </td>
+          <td>
+            <div id="timer"></div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="cakeNames">
+      <ul>
+        <li><a href="https://www.wishque.com/product/view/mango-truffle-cake-53340">Mango Truffle Cake</a></li>
+        <li><a href="https://www.wishque.com/product/view/lindtberry-chocolate-celebration-cake-51880">Lindtberry Chocolate Celebration Cake</a></li>
+        <li><a href="https://www.wishque.com/product/view/blackforest-cake-by-shangri-la-53390">Blackforest Cake By Shangri-La</a></li>
+        <li><a href="https://www.wishque.com/product/view/strawberry-chocolate-mousse-cake-53340">Strawberry Chocolate Mousse Cake</a> </li>
+        <li><a href="https://www.wishque.com/product/view/royal-chocolate-spray-cake-53340">Royal Chocolate Spray Cake</a></li>
+        <li><a href="https://www.wishque.com/product/view/gulab-jamun-ribbon-cake-51880">Gulab Jamun Ribbon Cake</a></li>
+        <li><a href="https://www.wishque.com/product/view/buttercream-petals-art-cake-51880">Buttercream Petals Art Cake</a></li>
+        <li><a href="https://www.wishque.com/product/view/rum-and-raisin-chocolate-trifle-53340">Rum And Raisin Chocolate Trifle</a></li>
+      </ul>
+    </div>
+
+    <!-- Messsage Modules -->
+    
+    <div id="successfulMsgCont">
+      <div id="successfulMsgModel">
+        <p>Bidding successful !</p>
+        <div class="closeBtn">&times; </div>
+      </div>
+    </div>
+
+    <div id="errorMsgCont">
+      <div id="errorMsgModel">
+        <p>Bid amount should be greater than current price</p>
+        <div class="closeBtn">&times; </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
